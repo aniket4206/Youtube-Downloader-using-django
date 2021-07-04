@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<title>New</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style type="text/css">
+.table, th, td {
+  border: 1px solid black;
+  padding: auto;
+
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Youtube Video Downloder </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instagram video downloader</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Whatsapp Tricks</a>
+            </li>
+            </ul>
+        </div>
+      </nav>
+        <br><br>
+       <center> <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src={{embd}} allowfullscreen></iframe>
+        </center></div>
+<br><br>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      
+      <th scope="col">Resolution</th>
+      <th scope="col">Download</th>
+      
+    </tr>
+  </thead>
+    {% for i in rsl %}
+  <tbody>
+    <tr>
+     
+      <td>{{i}}</td>
+      <td> <form> <button type="button" class="btn btn-success">Download</button> </form> </td>
+   
+    </tr>
+      {% endfor %}
+    
+  </tbody>
+</table>
+
+ 
+
+    <div>
+        <h5 style="text-align: center;color: blueviolet;">This website is usefull for downloading Youtube videos.</h3>
+        <h6 style="text-align: center;color: rebeccapurple;">This website Created by Aniket Sinare</h5>
+    </div>
+</body>
+</html>         
